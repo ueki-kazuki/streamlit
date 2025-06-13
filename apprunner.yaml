@@ -10,4 +10,4 @@ run:
   pre-run:  
     - pip3 install pipenv
     - pipenv install
-  command: pipenv run streamlist run profile.py --server.port 8080
+  command: pipenv run streamlit run profile.py --server.port 8080
