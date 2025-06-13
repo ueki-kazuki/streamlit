@@ -1,8 +1,9 @@
 version: 1.0
-runtime: python311
-run:
-  runtime-version: 3.11
-  pre-run:  
-    - pip3 install pipenv
+runtime: python3
+build:
+  commands:
+    build:
+    - pip install pipenv
     - pipenv install
+run:
   command: pipenv run streamlist run profile.py --server.port 8080
